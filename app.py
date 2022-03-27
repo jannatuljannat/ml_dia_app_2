@@ -15,14 +15,14 @@ def home_page():
 
 @app.route("/result", methods =['POST']) 
 def result_page():
-    Pregnancies = float(request.form['pregnancies'])
-    Glucose = float(request.form['glucose'])
-    BP = float(request.form['blood_pressure'])
-    S_Thickness = float(request.form['skin_thickness'])
-    Insulin = float(request.form['insulin'])
-    BMI = float(request.form['bmi'])
-    Diabetes_PF = float(request.form['diabetes_pf'])
-    Age = float(request.form['age'])
+    Pregnancies = request.form('pregnancies')
+    Glucose = request.form('glucose')
+    BP = request.form('blood_pressure')
+    S_Thickness = request.form('skin_thickness')
+    Insulin = request.form('insulin')
+    BMI = request.form('bmi')
+    Diabetes_PF = request.form('diabetes_pf')
+    Age = request.form('age')
          
 
 
